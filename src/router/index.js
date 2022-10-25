@@ -4,6 +4,7 @@ import login from '../views/login'
 import home from '../components/home'
 import operationCenter from '../components/operationCenter'
 import userCenter from '../components/userCenter'
+import formCenter from '../components/six'
 import fullScreen from '../views/fullScreen'
 
 Vue.use(Router)
@@ -34,6 +35,11 @@ export default new Router({
           path: '/home/userCenter',
           name: 'userCenter',
           component: userCenter,
+        },
+        {
+          path: '/home/formCenter',
+          name: 'formCenter',
+          component: formCenter,
         }
       ]
     },
